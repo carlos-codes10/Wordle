@@ -82,7 +82,7 @@ public class WordleController : MonoBehaviour
     {
         
 
-        if (model.currentAttempt >= 6)
+       if (model.currentAttempt >= 6)
        {
             LoseGame();
        }
