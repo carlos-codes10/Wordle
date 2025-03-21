@@ -56,17 +56,17 @@ public class WordleModel : MonoBehaviour
             if (correctAnswer[i] == guessedWord[i])
             {
                 cells[row, i].color = Color.green;
-                Debug.Log(guessedWord[i] + " is in the right spot!");
+                //Debug.Log(guessedWord[i] + " is in the right spot!");
             }
             else if (correctAnswer.Contains(guessedWord[i]))
             {
                 cells[row, i].color = Color.yellow;
-                Debug.Log(guessedWord[i] + " is somewhere in the word");
+                //Debug.Log(guessedWord[i] + " is somewhere in the word");
             }
             else
             {
                 cells[row, i].color = Color.gray;
-                Debug.Log(guessedWord[i] + " is not in the word");
+                //Debug.Log(guessedWord[i] + " is not in the word");
             }
         }
             row++;

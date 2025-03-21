@@ -44,6 +44,6 @@ public class WordleView : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
