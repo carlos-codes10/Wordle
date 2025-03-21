@@ -45,11 +45,6 @@ public class WordleController : MonoBehaviour
             WinGame();
         }
 
-        if (model.currentAttempt >= 6 && !model.isValidGuess(word))
-        {
-            LoseGame();
-        }
-
         if ((model.allowedWords.Contains(word) || model.possibleAnswers.Contains(word)) && !inputList.Contains(word))
         {
             inputList.Add(word);
@@ -85,6 +80,11 @@ public class WordleController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        string word = input.text.ToLower();
+        if (model.currentAttempt >= 6 && !model.isValidGuess(word))
+        {
+            LoseGame();
+        }
 
     }
 }
